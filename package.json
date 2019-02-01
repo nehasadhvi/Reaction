@@ -1,0 +1,35 @@
+{
+  "name": "reaction",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehasadhvi/Reaction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehasadhvi/Reaction/issues"
+  },
+  "homepage": "https://github.com/nehasadhvi/Reaction#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.8",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  }
+}
